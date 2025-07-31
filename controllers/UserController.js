@@ -38,6 +38,7 @@ const createUser = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
 const updateUser = async (req, res) => {
   try {
     const { id } = req.params;
@@ -57,6 +58,7 @@ const updateUser = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
 const deleteUser = async (req, res) => {
   try {
     const { id } = req.params;
